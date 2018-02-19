@@ -1,8 +1,10 @@
 # Add  code here!
 def prime?(n)
-  (2..Math.sqrt(n)).none? { |i|
+  if n < 0
+    return false
+  else
+    (2..Math.sqrt(n)).none? { |i|
     n % i == 0
-  }
+    }
+  end
 end
-
-  
